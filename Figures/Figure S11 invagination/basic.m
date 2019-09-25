@@ -1,0 +1,15 @@
+clc; clear; tic;
+figure(7); clf;
+set(figure(7), 'Position', [0, 0, 1100, 500]);
+fig = tightsubplot(2, 4, [-0.1 0], [-0.32 -0.06], [-0.015 -0.015]);
+subfigure(23, 1, 4, fig, '04-13 gast09/data/', 200, '50');
+subfigure(23, 2, 3, fig, '04-13 gast09/data/', 200, '700');
+subfigure(23, 3, 3, fig, '04-13 gast09/data/', 200, '7000');
+subfigure(23, 4, 5, fig, '04-13 gast09/data/', 200, '14000');
+subfigure(15, 5, 12, fig, '02-06 neurulation10a/data/', 300, '2');
+subfigure(15, 6, 11, fig, '02-06 neurulation10a/data/', 300, '302');
+subfigure(15, 7, 11, fig, '02-06 neurulation10a/data/', 300, '1000');
+subfigure(15, 8, 11, fig, '02-06 neurulation10a/data/', 300, '10000');
+f = gcf; f.PaperSize = [f.PaperPosition(3) f.PaperPosition(4)];
+print('figure.pdf', '-dpdf');
+toc;

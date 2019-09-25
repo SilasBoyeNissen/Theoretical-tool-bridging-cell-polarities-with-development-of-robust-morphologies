@@ -1,0 +1,11 @@
+figure(1); clf;
+set(figure(1), 'Position', [1, 1, 1200, 850]);
+fig = tightsubplot(2, 3, [0 0], [-0.03 -0.055], [-0.025 -0.015]);
+subfigure(50, 1, fig, 'June 1 noiseE-4/data/t250000.mat', -42, 41, 120, 'log(t)=4.4', -40, -38);
+subfigure(50, 2, fig, 'June 1 noiseE-4/data/t400000.mat', -42, 41, 120, 'log(t)=4.6', -40, -38);
+subfigure(50, 3, fig, 'June 1 noiseE-4/data/t630000.mat', -42, 41, 120, 'log(t)=4.8', -40, -38);
+subfigure(68, 4, fig, 'July 12 divideCells/data/t0.mat', -54, 60, 64, '8000 cells', -54, -40);
+subfigure(68, 5, fig, 'July 12 divideCells/data/t79000.mat', -54, 60, 60, '16000 cells', -58, -52);
+subfigure(68, 6, fig, 'July 12 divideCells/data/t160000.mat', -68, 60, 56, '24000 cells', -58, -62);
+f = gcf; f.PaperSize = [f.PaperPosition(3) f.PaperPosition(4)];
+print('figure.pdf', '-dpdf');

@@ -1,0 +1,13 @@
+clc; clear; tic;
+figure(1); clf;
+set(figure(1), 'Position', [0, 0, 800, 500]);
+fig = tightsubplot(2, 3, [-0.25 -0.05], [-0.27 -0.07], [-0.03 -0.035]);
+subfigure(fig, 1, '0');
+subfigure(fig, 2, '200');
+subfigure(fig, 3, '2000');
+subfigure(fig, 4, '7000');
+subfigure(fig, 5, '20000');
+subfigure(fig, 6, '50000');
+f = gcf; f.PaperSize = [f.PaperPosition(3) f.PaperPosition(4)];
+print('figure.pdf', '-dpdf');
+toc;
