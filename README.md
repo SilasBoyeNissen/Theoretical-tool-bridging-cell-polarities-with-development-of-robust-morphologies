@@ -4,7 +4,7 @@ by Silas Boye Nissen, Steven Rønhild, Ala Trusina, and Kim Sneppen.
 
 Available online: https://elifesciences.org/articles/38407.
 
-########################################################################################
+#####################################################################################
 
 This repository includes the entire dataset for generating and visualizing the figures and the movies in the article.
 
