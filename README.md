@@ -16,4 +16,6 @@ The Matlab folder includes the general script for generating and visualizing dat
 
 The Movies folder includes the scripts for generating all movies.
 
+The Python folder includes a minimal Python version of the general model with CUDA acceleration and automatic differentiation.
+
 For questions please contact silas@nbi.ku.dk.
